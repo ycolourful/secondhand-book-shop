@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>用户登录</title>
+	<style type="text/css">
+  #login{
+  	width: 1000px;
+  	margin: 0 auto;
+  }
+  #login p{
+  	text-align: center;
+  }
+  .t1{
+  	font-size: 28px;
+  	font-family: "微软雅黑";
+  	color:#FF69B4;
+
+  }
+  .textbox{
+  	width: 360px;
+  	height: 40px;
+  	border: 1px solid #e2b709;
+  	padding-left: 10px;
+  	border-radius: 3px;
+  }
+  .submit{
+  	margin-left: 45px;
+  	width: 360px;
+  	height: 40px;
+  	background-color: #FFC0CB;
+  	border-radius: 3px;
+  	color: white;
+    border: 1px solid #666666;
+  }
+  .text{
+  	width: 360px;
+  	font-size: 15px;
+  	margin: 0 auto;
+  }
+  .body1{
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+  }
+
+	</style>
+</head>
+<body  class="body1" >
+ 
+  <div id="login">
+  <div width="500px" height="200px"></div>
+
+	<p class="t1">博客，记录生活中的点点滴滴......</p>
+	<form method="post" action="login2.php">
+	<p>用户名：<input type="text" class="textbox" name="username" placeholder="Enter username">    </p>
+	<p>密码： <input type="password" class="textbox" name="password" placeholder="Enter password">    </p>
+  <p>验证码： <input type="text" class="textbox" name="verify" placeholder="Enter verify code">    </p>
+
+ 
+
+  
+ 
+
+	<p><input type="submit" value="确认登录" class="submit"></p>
+	
+	<p><input type="button"  class="submit" value="注册账号"> </p>
+  <p><input type="checkbox" name="autologin">一周内自动登录</p>
+  <p class="text" style="text-align:right">忘记密码</p>
+  </form>
+</div>
+
+
+</body>
+</html>

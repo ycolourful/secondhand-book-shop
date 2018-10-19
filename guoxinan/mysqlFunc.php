@@ -61,5 +61,16 @@ function update($table,$array,$where=null){
    	$result=mysql_query($sql);
    	return mysql_num_rows($result);
    }
+   //弹出信息
+   function alertMsg($name,$url){
+   echo "<script>alert('{$name}');window.location.href='{$url}';</script>";
+   }
+   //检验是否登录
+   function checkLogin(){
+    if($_SESSION['userId']==""&&$_COOKIE['userId']){
+     // alertMsg("请先登录","");
+      echo "<script>alert('请先登录')</script>";
+    }
+   }
 
 ?>
